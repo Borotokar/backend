@@ -769,6 +769,7 @@ class ExpertController extends Controller
 
         $transaction->expert_id = $expert->id;
         $transaction->amount = $request->amount;
+        $transaction->ip = $request->ip();
 
 	$payConfig = config('payment');
 	
